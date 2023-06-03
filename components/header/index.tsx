@@ -24,7 +24,7 @@ const Header: FC = () => {
   });
   return (
     <div
-      className={`sticky top-0 z-[1000] bg-[#1b1a17] ${
+      className={`sticky z-[1000] bg-[#1b1a17] ${
         show !== 0 ? "border-b border-orange-200 shadow-orange-600" : ""
       }`}
     >

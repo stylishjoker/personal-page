@@ -8,7 +8,7 @@ const BodyAvatar: FC = () => {
     const $ = document.querySelector.bind(document);
     const $$ = document.querySelectorAll.bind(document);
     
-    const classContainer = ["player-container-song","player-control"];
+    const classContainer = ["player-control"];
     
     const player_container = (nameClasses) => {
       const containerBLock = $("#player");

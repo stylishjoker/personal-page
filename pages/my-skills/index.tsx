@@ -13,7 +13,10 @@ import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
 
 const MySkills: FC = () => {
   return (
-    <div>
+    <div
+      id="my-skills"
+      className="flex flex-col justify-center items-center min-h-screen"
+    >
       <h2 className="font-incon text-orange-400 font-bold text-center text-3xl my-10">
         My Skills
       </h2>

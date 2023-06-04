@@ -4,7 +4,7 @@ import { GiNinjaStar } from "react-icons/gi";
 
 const AboutMe: FC = () => {
   return (
-    <div className="flex mt-10 flex-col justify-center">
+    <div id="about-me" className="flex mt-10 flex-col justify-center">
       <div className="flex flex-col sm:flex-row">
         <div className="font-incon flex flex-col items-center justify-center sm:w-[45%]">
           <h2 className="uppercase text-orange-400 font-bold text-2xl lg:text-4xl">

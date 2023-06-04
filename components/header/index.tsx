@@ -4,6 +4,7 @@ import React, { FC, useState, useEffect } from "react";
 import Logo from "../logo";
 import MenuIcon from "../icon-menu";
 import Nav from "../nav";
+import Link from "next/link";
 
 const Header: FC = () => {
   const [checked, setChecked] = useState(false);
@@ -24,12 +25,14 @@ const Header: FC = () => {
   });
   return (
     <div
-      className={`sticky z-[1000] bg-[#1b1a17] ${
+      className={`sticky top-0 z-[1000] bg-[#1b1a17] ${
         show !== 0 ? "border-b border-orange-200 shadow-orange-600" : ""
       }`}
     >
       <div className="flex justify-between items-center relative p-2 vm:flex-col sm:flex-row sm:justify-around sm:p-4">
-        <Logo />
+        <Link href={"/"}>
+          <Logo />
+        </Link>
         <MenuIcon callback={(text: boolean) => setChecked(text)} />
         <Nav checked={checked} />
       </div>

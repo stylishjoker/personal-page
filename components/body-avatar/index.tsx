@@ -27,7 +27,7 @@ const BodyAvatar: FC = () => {
   return (
     <div className="relative flex justify-end p-4">
       <Avartar />
-      <pre className="absolute top-0 left-0 z-[-2] text-[10px] text-orange-200 lg:text-[20px]">
+      <pre className="absolute top-0 left-0 z-[-2] text-[7px] text-orange-200 lg:text-[20px]">
         <code dangerouslySetInnerHTML={{ __html: string }} />
       </pre>
     </div>

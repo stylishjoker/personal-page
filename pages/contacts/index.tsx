@@ -12,7 +12,9 @@ const Contacts: FC = () => {
     >
       <div className="flex flex-col items-center justify-center p-4 text-center">
         <Logo />
-        <p>If you liked my work and you need me, I'm ready to talk to you</p>
+        <p>
+          If you liked my work and you need me, I&apos;m ready to talk to you
+        </p>
       </div>
       <div>
         <h2 className="font-incon text-orange-400 font-bold text-center text-3xl my-4">

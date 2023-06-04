@@ -8,7 +8,7 @@ const AboutMe: FC = () => {
       <div className="flex flex-col sm:flex-row">
         <div className="font-incon flex flex-col items-center justify-center sm:w-[45%]">
           <h2 className="uppercase text-orange-400 font-bold text-2xl lg:text-4xl">
-            Hi i'm Phan Trung Kiên
+            Hi i&apos;m Phan Trung Kiên
           </h2>
           <h2 className="text-2xl lg:text-3xl">Front end developer</h2>
           <p className="w-[70%] lg:text-xl">

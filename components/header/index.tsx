@@ -14,9 +14,7 @@ const Header: FC = () => {
     const handleScroll = () => {
       setShow(window.scrollY);
     };
-    // if (window.scrollY === 0) {
     window.addEventListener("scroll", handleScroll);
-    // }
     if (window.scrollY > 1) {
       return () => {
         window.removeEventListener("scroll", handleScroll);
@@ -33,8 +31,11 @@ const Header: FC = () => {
         <Link href={"/"}>
           <Logo />
         </Link>
-        <MenuIcon callback={(text: boolean) => setChecked(text)} />
-        <Nav checked={checked} />
+        <MenuIcon
+          checked={checked}
+          callback={(text: boolean) => setChecked(text)}
+        />
+        <Nav callback={(text: boolean) => setChecked(text)} checked={checked} />
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import React, { FC } from "react";
 
 interface Props {
+  checked: boolean;
   callback: (text: boolean) => void;
 }
-const MenuIcon: FC<Props> = ({ callback }) => {
+const MenuIcon: FC<Props> = ({ callback, checked }) => {
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const isChecked = event.target.checked;
     callback(isChecked);
@@ -15,6 +16,7 @@ const MenuIcon: FC<Props> = ({ callback }) => {
         className="hidden"
         id="active"
         onChange={handleCheckboxChange}
+        checked={checked}
       />
       <label htmlFor="active" className="menu-btn">
         <span></span>
